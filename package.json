@@ -1,0 +1,36 @@
+{
+  "name": "intelligent-document-analyzer",
+  "version": "1.0.0",
+  "description": "AI-powered document analysis and Q&A system",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run client:dev\" \"npm run server:dev\"",
+    "client:dev": "cd client && npm start",
+    "server:dev": "cd server && npm run dev",
+    "build": "npm run client:build && npm run server:build",
+    "client:build": "cd client && npm run build",
+    "server:build": "cd server && npm run build",
+    "test": "npm run client:test && npm run server:test",
+    "client:test": "cd client && npm test",
+    "server:test": "cd server && npm test",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "clean": "rimraf node_modules client/node_modules server/node_modules"
+  },
+  "keywords": [
+    "ai",
+    "document-analysis",
+    "ocr",
+    "openai",
+    "react",
+    "typescript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "rimraf": "^4.4.0"
+  },
+  "dependencies": {
+    "ollama": "^0.5.16"
+  }
+}

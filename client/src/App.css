@@ -1,0 +1,54 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  /* Layered subtle gradients in shades of #16181c */
+  background:
+    radial-gradient(1100px 600px at 20% -10%, rgba(22, 24, 28, 0.85), rgba(22, 24, 28, 0) 60%),
+    radial-gradient(900px 500px at 85% 0%, rgba(29, 31, 36, 0.75), rgba(22, 24, 28, 0) 60%),
+    radial-gradient(800px 600px at 50% 100%, rgba(17, 18, 21, 0.8), rgba(22, 24, 28, 0) 60%),
+    linear-gradient(180deg, #16181c 0%, #131519 50%, #0f1115 100%);
+  color: #e5e7eb;
+}
+
+/* Card surfaces */
+.card-surface {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+}
+
+/* Inputs */
+.input-surface {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+/* Primary button */
+.btn-primary {
+  background: linear-gradient(135deg, #111214, #1a1b1e);
+  color: #fafafa;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #141518, #202125);
+}
+
+/* Accent button for primary actions */
+.btn-accent {
+  background-color: #81a1c1;
+  color: #0a0a0b;
+}
+.btn-accent:hover {
+  background-color: #6f90b1;
+}
+
+/* Accent bubble and avatar for user messages */
+.bubble-accent {
+  background-color: #81a1c1;
+  color: #0a0a0b;
+}
+.avatar-accent {
+  background-color: #81a1c1;
+  color: #0a0a0b;
+}
